@@ -20,6 +20,7 @@ export const createHomePage = () => {
     homeArticle.appendChild(homeImg);
 
     const description = document.createElement("div");
+    description.id = 'description';
     const descriptionText1 = document.createElement("p");
     descriptionText1.textContent = "Everyone's money is good here. What are you waiting for? Come on in and empty that piggy bank!";
     const descriptionText2 = document.createElement("p");
