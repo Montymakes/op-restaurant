@@ -1,5 +1,6 @@
 import "./reset.css";
 import "./styles.css";
+import {createHomePage} from './homepage';
 
-const content = document.getElementById("content");
 
+createHomePage();

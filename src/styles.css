@@ -77,6 +77,10 @@ h3 {
     color: #0b4f6c;
 }
 
+.bold {
+    font-family: 'Poppins Bold', Impact, 'Arial Narrow Bold', sans-serif;
+}
+
 main {
     width: 60%;
     height:100%;
@@ -143,20 +147,20 @@ blockquote {
     justify-content: space-between;
 }
 
-#schedule-section {
+#schedule {
     display: flex;
     justify-content: space-between;
 }
 
-#schedule li {
+#schedule ul li {
     margin-bottom: 3rem;    
 }
 
-#schedule li p:first-child {
+#schedule ul li p:first-child {
     float: left;
     margin-right: 2rem;
 }
 
-#schedule li p:last-child {
+#schedule ul li p:last-child {
     float: right;
 }
