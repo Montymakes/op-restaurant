@@ -85,4 +85,3 @@ export const createMenuPage = () => {
     pizza.appendChild(pizzaImage);
     pizza.innerHTML += `<p id="pizza">Coming soon!</p>`;
 };
-

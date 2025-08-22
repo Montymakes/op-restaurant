@@ -4,7 +4,6 @@ export const createHomePage = () => {
     const content = document.getElementById("content");
     content.innerHTML = '';
 
-
     const homeArticle = document.createElement("article");
     homeArticle.id = 'home';
     content.appendChild(homeArticle);
@@ -26,7 +25,7 @@ export const createHomePage = () => {
 
     const description = document.createElement("div");
     const descriptionText1 = document.createElement("p");
-    descriptionText1.textContent = "We serve the best grub money can buy. What are you waiting for? Come on in and empty that piggy bank!";
+    descriptionText1.textContent = "Everyone's money is good here. What are you waiting for? Come on in and empty that piggy bank!";
     const descriptionText2 = document.createElement("p");
     descriptionText2.textContent = "Cash only. No deliveries or refunds.";
     descriptionText2.classList.add('bold');
@@ -43,7 +42,6 @@ export const createHomePage = () => {
     location.appendChild(locationHeading);
     location.appendChild(locationDescription);
     homeArticle.appendChild(location);
-
 
     const schedule = document.createElement("section");
     schedule.id = "schedule";
@@ -73,10 +71,3 @@ export const createHomePage = () => {
 
     schedule.appendChild(scheduleList);
 };
-
-
-
-
-
-
-
