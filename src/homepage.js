@@ -2,6 +2,8 @@ import krustyKrabImg from './krustykrab.webp';
 
 export const createHomePage = () => {
     const content = document.getElementById("content");
+    content.innerHTML = '';
+
 
     const homeArticle = document.createElement("article");
     homeArticle.id = 'home';
@@ -21,8 +23,6 @@ export const createHomePage = () => {
     homeImg.src = krustyKrabImg;
     homeImg.alt = "A photo of the The Krusty Krab";
     homeArticle.appendChild(homeImg);
-
-
 
     const description = document.createElement("div");
     const descriptionText1 = document.createElement("p");
