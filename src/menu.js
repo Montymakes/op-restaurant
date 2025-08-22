@@ -2,11 +2,7 @@ import krabbyPattyImg from './krabby-patty.webp';
 import krustyKrabPizza from './Krusty_Krab_Pizza.webp';
 
 export const createMenuPage = () => {
-    const content = document.getElementById('content');
-    content.innerHTML = '';
-
     const menu = document.createElement('article');
-    content.appendChild(menu);
     menu.innerHTML = `<h1>Galley Grub</h1>`;
 
     const burgers = document.createElement('section');
@@ -84,4 +80,6 @@ export const createMenuPage = () => {
     pizzaImage.alt = "A picture of a Krusty Krab Pizza";
     pizza.appendChild(pizzaImage);
     pizza.innerHTML += `<p id="pizza">Coming soon!</p>`;
+
+    return menu;
 };

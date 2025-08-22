@@ -1,12 +1,8 @@
 import krustyKrabImg from './krustykrab.webp';
 
 export const createHomePage = () => {
-    const content = document.getElementById("content");
-    content.innerHTML = '';
-
     const homeArticle = document.createElement("article");
     homeArticle.id = 'home';
-    content.appendChild(homeArticle);
 
     const homeHeading = document.createElement("h1");
     homeHeading.textContent = 'THE KRUSTY KRaB'
@@ -70,4 +66,6 @@ export const createHomePage = () => {
     scheduleList.appendChild(daysClosed);
 
     schedule.appendChild(scheduleList);
+
+    return homeArticle;
 };
