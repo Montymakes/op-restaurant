@@ -18,4 +18,25 @@ module.exports = {
       template: "./src/template.html",
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.(png|webp)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(ttf)$/i,
+        type: 'asset/resource',
+
+      },
+    ],
+  }
 };

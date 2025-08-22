@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('./Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('./Poppins-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins Italic';
+    src: url('./Poppins-Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubik Spray Paint Regular';
+    src: url('./RubikSprayPaint-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+    font-size: 12px;
+    font-family: 'Poppins Regular', 'Comic Sans MS', sans-serif;
+}
+
+header {
+    height: 10vh;
+    width: 100vw;
+}
+
+body {
+    height: 90vh;
+    width: 100vw;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background:rgba(93, 224, 215, 1);
+    background-image: no-repeat center/100% url('./spongebob_sky_flowers_wallpaper.png');
+    background: no-repeat center/100% url('./spongebob_sky_flowers_wallpaper.png'), linear-gradient(180deg,rgba(93, 224, 215, 1) 0%, rgba(117, 211, 230, 1) 50%, rgba(52, 145, 191, 1) 83%, rgba(31, 90, 173, 1) 100%);
+    background-blend-mode: soft-light;
+    font-size: 1.75rem;
+    color:#040F16;
+}
+
+h1 {
+    font-family: 'Rubik Spray Paint Regular', Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 8rem;
+    color: #D11C;
+    -webkit-text-stroke: 2px #6340b1;
+    margin: 10px 0;
+}
+
+blockquote {
+    font-family: 'Poppins Italic', 'Comic Sans MS', cursive;
+
+}
+
+h2, h3 {
+    font-family: 'Poppins Bold', Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 3.5rem;
+    color: #0b4f6c;
+}
+
+main {
+    width: 60%;
+    height:100%;
+    margin: 0 auto;
+    background-color: #ffe9c0b9;
+
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+#home {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+}
+
+#home div, #home section, #home blockquote {
+    width:100%;
+}
+
+blockquote {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+#home img {
+    width: 400px;
+    height:250px;
+    
+    border: 12px solid black;
+    border-image-slice: 12 12 12 12;
+    border-image-width: 12px 12px 12px 12px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: repeat repeat;
+    border-image-source: url('wooden-frame-1725826_640.png');
+    border-style: solid;
+    
+    position: relative;
+	box-shadow: 0px 5px 23px 5px rgba(145, 118, 67, 0.84)
+}
+
+#home div p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+#home section h3 {
+    float: left;
+}
+
+#home section ul, #location p {
+    float: right;
+}
+
+#location {
+    display: flex;
+    justify-content: space-between;
+}
+
+#schedule-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#schedule li {
+    margin-bottom: 3rem;    
+}
+
+#schedule li p:first-child {
+    float: left;
+    margin-right: 2rem;
+}
+
+#schedule li p:last-child {
+    float: right;
+}
